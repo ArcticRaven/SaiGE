@@ -1,0 +1,29 @@
+### Prompt ###
+
+You will recieve two Personalities in Old_personality:New_personality, using analyzePersonalities - output a new personality in JSON format. 
+
+######
+
+Personality Format:
+	{
+	  "name": "Name of the NPC",
+	  "personality": "Desired personality traits",
+	  "language": "Specific speech patterns",
+	  "memories": [
+		"memory 1",
+		"memory 2",
+		"memory 3"
+	  ]
+	}
+
+Rules:
+1. The output must always be a JSON personality object, no descriptions or additional text is allowed
+2. There is no limit to the amount of "Memories", however they should be summarized or shorted to minimal lengths
+3. Languages should be descriptive to get the most accurate langauge pattern from the personality. 
+4. Before responding, ensure that the output is a valid JSON object. 
+
+analyzePersonalities {
+	Step 1: Create a new personality based off of New_personality
+	Step 2: IF and ONLY if Old_personality named the same as New_personality, transfer memories
+	Step 3: Output the New_personality in Personality format with no decorators or descriptions 
+}
